@@ -9,8 +9,8 @@ a:hover {
 }
 body {
   background: url('../img/body_bg.jpg');
-  min-width: 1000px;
-  overflow: hidden;
+  background-size: cover;
+  zoom: 1;
 }
 body .overflowhiddendiv {
   overflow: hidden;
@@ -199,10 +199,13 @@ body .overflowhiddendiv {
 }
 .aboutus .dish img {
   width: 100%;
-  height: 540px;
-  padding-top: 37px;
+  height: 518px;
+  padding-top: 52px;
   padding-right: 20px;
   margin-left: -4px;
+}
+.aboutus .flex-control-nav {
+  display: none;
 }
 .footers {
   padding: 1% 0;
@@ -238,10 +241,9 @@ body .overflowhiddendiv {
   top: 20%;
   left: 49%;
   color: #ff6633;
-  font-size: 13px;
+  font-size: 14px;
   transform: translate(-50%, -10%);
   font-weight: 700;
-  word-break: 3px;
 }
 .cont-feed .contact {
   padding-right: 0;
@@ -268,24 +270,27 @@ body .overflowhiddendiv {
 .cont-feed .contact address span:nth-child(5) {
   margin-bottom: 3%;
 }
-.cont-feed .contact address span:nth-child(7) > a {
+.cont-feed .contact address span:nth-child(6) {
+  color: #ff6633;
+  font-size: 18px;
+  font-weight: 600;
+}
+.cont-feed .contact address span:nth-hcild(7) > a {
+  font-size: 15.5px;
+}
+.cont-feed .contact address span:nth-child(8) {
+  margin-top: 3%;
+  color: #ff6633;
+  font-size: 18px;
+  font-weight: 600;
+}
+.cont-feed .contact address span:nth-child(8) > a {
+  font-weight: 100;
+  font-size: 15.5px;
   text-transform: lowercase;
 }
-.cont-feed .contact .enquiry {
-  font-family: 'Lato';
-  font-size: 16px;
-  font-weight: 300;
-}
-.cont-feed .contact .enquiry a {
-  color: #ff6633;
-  -webkit-transition: all 300ms ease;
-  -moz-transition: all 300ms ease;
-  -o-transition: all 300ms ease;
-  transition: all 300ms ease;
+.cont-feed .contact address span > a:hover {
   text-decoration: none;
-}
-.cont-feed .contact .enquiry a:hover {
-  text-decoration: underline;
 }
 .feed {
   padding: 4%;
@@ -294,7 +299,7 @@ body .overflowhiddendiv {
   margin-bottom: 20px;
 }
 .feed .head-floral {
-  margin-bottom: 5px;
+  margin-bottom: 25px;
   position: relative;
 }
 .feed .head-floral p {
@@ -302,7 +307,7 @@ body .overflowhiddendiv {
   top: 20%;
   left: 50%;
   color: #ff6633;
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 700;
   transform: translate(-50%, -10%);
   word-spacing: 3px;
@@ -337,8 +342,12 @@ body .overflowhiddendiv {
   border-color: #ff6633;
   box-shadow: 0 0 0 #ff6633;
 }
+.feed form .lastgroup {
+  margin-left: 47%;
+  overflow: hidden;
+}
 .feed form button.submit {
-  width: 143px;
+  width: 170px;
   padding: 6px;
   border: 1px solid #ff6633;
   border-radius: 2px;
@@ -359,8 +368,9 @@ body .overflowhiddendiv {
 .feed form button.submit:focus {
   outline: none;
 }
-.feed form .last-button {
-  padding-left: 3px;
+.rc-anchor-normal .rc-anchor-pt {
+  width: 82px !important;
+  text-align: right !important;
 }
 .input1 {
   padding-right: 0;
@@ -376,6 +386,9 @@ body .overflowhiddendiv {
 .flexs .flexslider {
   border: none;
   margin: 0;
+}
+.flex-control-nav {
+  display: none;
 }
 .relative-box {
   position: relative;
@@ -404,12 +417,12 @@ body .overflowhiddendiv {
 .videos .info-media p {
   position: absolute;
   top: 30%;
-  left: 12%;
+  left: 11%;
   color: #ff6633;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 600;
   text-transform: uppercase;
-  word-spacing: 1.5px;
+  word-spacing: 1px;
 }
 .videos .main-video {
   width: 75%;
@@ -428,6 +441,10 @@ body .overflowhiddendiv {
 }
 .videos .main-video .img-container .img-holder > a:hover {
   border: 2px solid #ff6633;
+}
+.available {
+  background: url('../img/aboutbg.jpg');
+  background-size: cover;
 }
 .prd-info {
   border: 3px solid #E6E7E8;
@@ -459,7 +476,68 @@ img {
 img.doneLoading {
   opacity: 1;
 }
-.container {
-  max-width: none !important;
-  width: 970px;
+.g-recaptcha iframe {
+  width: 500px;
+  height: 150px;
+}
+.popup-info {
+  background-color: #fff;
+  min-height: 300px;
+}
+.popup-info p {
+  padding: 5% 10%;
+  font-size: 25px;
+}
+.popup-info #rc-imageselect {
+  min-height: 600px;
+  min-width: 240px;
+  font-family: Roboto, helvetica, arial, san-serif;
+  zoom: 0.5 !important;
+}
+.ngdialog-overlay {
+  display: none;
+}
+.ngdialog-content {
+  background-color: transparent;
+}
+.popup-holder {
+  position: relative;
+}
+.popup-holder .popup-info-captcha {
+  background-color: #fff ! important;
+  text-align: center;
+  padding: 1% 0;
+  position: absolute;
+  width: 100%;
+  top: 137px;
+}
+.popup-holder p {
+  font-size: 19px;
+}
+.pop-up-hold {
+  position: relative;
+}
+.pop-up-hold .popup-info {
+  background-color: #fff;
+  min-height: 0;
+  position: absolute;
+  top: 150px;
+  left: 47px;
+  padding: 3% 0;
+}
+.pop-up-hold button.close {
+  font-size: 35px;
+}
+.pop-up-hold p {
+  padding: 5% 10%;
+  font-size: 22px;
+}
+.profile-photo.profile-email.profile-photo-light {
+  display: none;
+}
+div.profile-photo-light {
+  display: none;
+}
+.rc-anchor-normal .rc-anchor-pt {
+  display: none !important;
 }
