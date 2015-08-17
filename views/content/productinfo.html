@@ -1,0 +1,45 @@
+ <div class="products align">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-11">
+                    <div class="row prod">
+                        <div class="col-xs-3">
+                            <div class="product-list">
+                                <h2>product range</h2>
+                                <ul class="list">
+                                         <li ng-repeat="prol in productlist"><a title="{{prol.name}}" ng-click="getmultipleproducts(prol.id)" class="">{{prol.name}}</a></li>
+<!--
+                                    <li><a href="#" title="Bread">Bread</a></li>
+                                    <li><a href="#" title="Snacks - Vegetarian">Snacks - Vegetarian</a></li>
+                                    <li><a href="#" title="Snacks - Non Vegetarian">Snacks - Non Vegetarian</a></li>
+                                    <li><a href="#" title="Herbs and Spices">Herbs and Spices</a></li>
+                                    <li><a href="#" title="Non Vegetarian">Non Vegetarian</a></li>
+                                    <li><a href="#" title="Fish">Fish</a></li>
+                                    <li><a href="#" title="Pastry">Pastry</a></li>
+-->
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-9">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div class="product-info">
+                                        <div class="img-holder">
+                                            <img ng-src="{{singleproductdetail.image|serverimage}}" alt="paratha" class="img-responsive prd-info" />
+                                        </div>
+                                        <div class="img-descp">
+                                            <h3>{{singleproductdetail.name}}</h3>
+                                            <span>({{singleproductdetail.pieces}} pieces)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <p class="text-center prd-info-descp">{{singleproductdetail.description}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,101 @@
+<div class="feedback">
+    <div class="container">
+        <div class="row align">
+            <div class="col-xs-offset-1 col-xs-10">
+                <div class="feed">
+                    <div class="head-floral">
+                        <img src="img/feedback-head.png" alt="feedback head" class="img-responsive">
+                        <p>we would love to receive your feedback</p>
+                    </div>
+                    <div class="row">
+                        <div class=" col-xs-offset-2 col-xs-8">
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="name" class="col-xs-2 control-label"><span>*</span>name</label>
+                                    <div class="col-xs-10">
+                                        <input type="text" class="form-control" ng-model=feedback.name ng-class="allvalidation[0].validation" id="name" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="col-xs-2 control-label"><span>*</span>email</label>
+                                    <div class="col-xs-10">
+                                        <input type="email" class="form-control" ng-model=feedback.email ng-class="allvalidation[1].validation" id="email" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="feedback" class="col-xs-2 control-label"><span>*</span>feedback</label>
+                                    <div class="col-xs-10">
+                                        <input type="text" class="form-control" ng-model=feedback.feedback ng-class="allvalidation[2].validation" id="feedback" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone" class="col-xs-2 control-label">phone</label>
+                                    <div class="col-xs-10">
+                                        <input type="tel" class="form-control" ng-model=feedback.phone id="phone">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="add1" class="col-xs-2 control-label">address1</label>
+                                    <div class="col-xs-10">
+                                        <input type="text" class="form-control" ng-model=feedback.address1 id="add1">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="add2" class="col-xs-2 control-label">address2</label>
+                                    <div class="col-xs-10">
+                                        <input type="text" class="form-control" ng-model=feedback.address2 id="add2">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="city" class="col-xs-2 control-label">city</label>
+                                    <div class="col-xs-10">
+                                        <input type="text" class="form-control" ng-model=feedback.city id="city">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="country" class="col-xs-2 control-label">country</label>
+                                    <div class="col-xs-10">
+                                        <input type="text" class="form-control" ng-model=feedback.country id="country">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="postcode" class="col-xs-2 control-label">postcode</label>
+                                    <div class="col-xs-10">
+                                        <input type="text" class="form-control" ng-model=feedback.postcode id="postcode">
+                                    </div>
+                                </div>
+                                <div class="form-group lastgroup">
+                                    <script src="//www.google.com/recaptcha/api.js"></script>
+                                    <div class="g-recaptcha" ng-class="allvalidation[3].validation" data-sitekey="6Lc3HAsTAAAAAN6OuXJWxINPl7ZFdTuFCsGCSWvH"> </div>
+                                </div>
+
+                                <!--
+                                <div class="form-group lastgroup">
+                                    <label for="code" class="col-xs-4 control-label">Enter the code shown </label>
+                                    <div class="col-xs-8">
+                                        <div class="row">
+                                            
+                                            <div class="col-xs-6 input1">
+                                                <input type="text" id="code" class="form-control">
+                                            </div>
+                                            <div class="col-xs-6 input2">
+                                                <input type="text" id="code" class="form-control">
+                                            </div>
+
+                                            <div vc-recaptcha theme="light" key="'6Lc3HAsTAAAAAN6OuXJWxINPl7ZFdTuFCsGCSWvH'" class="zoomcaptcha"></div>
+                                        </div>
+                                    </div>
+                                </div>
+-->
+                                <div class="form-group ">
+                                    <div class="col-xs-offset-8 col-xs-4 last-button">
+                                        <button type="submit" class="btn btn-default submit" ng-click=getfeedbackdetails(feedback)>SUBMIT</button>
+                                    </div>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
