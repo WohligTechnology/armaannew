@@ -460,15 +460,34 @@ body .overflowhiddendiv {
   width: 100%;
   min-height: 350px;
 }
-.videos .main-video .img-container {
+.videos .main-video .slide-vid {
   margin: 4% 0;
 }
-.videos .main-video .img-container .img-holder > a {
+.videos .main-video .slide-vid .img-container .img-holder > a {
   border: 2px solid transparent;
   display: block;
 }
-.videos .main-video .img-container .img-holder > a:hover {
+.videos .main-video .slide-vid .img-container .img-holder > a:hover {
   border: 2px solid #ff6633;
+}
+.videos .flexslider {
+  left: -5px;
+  border: none;
+  background-color: transparent;
+}
+.videos .flexslider .flex-direction-nav a {
+  top: 23% !important;
+}
+.videos .flexslider .flex-direction-nav .flex-next {
+  opacity: 1 !important;
+  right: -50px !important;
+}
+.videos .flexslider .flex-direction-nav .flex-prev {
+  opacity: 1 !important;
+  left: -20px !important;
+}
+.flexslider .slides > li {
+  margin-right: 2px;
 }
 .available {
   background: url('../img/feedback_backg.png');

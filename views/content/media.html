@@ -11,22 +11,23 @@
 						<div youtube code="bigmedia"></div>
 						<!--                        <iframe src="https://www.youtube.com/embed/gGJfbcDNI0A" frameborder="0" allowfullscreen class="embed-responsive-item"></iframe>-->
 						<div class="row">
-							<div class="img-container">
-								<div class="flexssss">
-									<flex-slider class="carousel" flex-slide="s in slidesabout" animation="fade" ng-controller="sliderctrl">
-										<li>
-											<div class="col-xs-4 col-sm-4 col-xs-4" ng-repeat="med in media" ng-click="toBigImage(med)">
-												<div class="img-holder">
-													<a href="#" class="active-img">
-														<img src="http://img.youtube.com/vi/{{med.image}}/0.jpg" alt="" class="img-responsive">
-													</a>
+							<div class="slide-vid">
+								<div class="img-container">
+									<div class="flexssss">
+										<flex-slider class="carousel" flex-slide="s in slidesabout" animation="slide" ng-controller="sliderctrl">
+											<li>
+												<div class="col-xs-4 col-sm-4 col-xs-4" ng-repeat="med in media" ng-click="toBigImage(med)">
+													<div class="img-holder">
+														<a href="#" class="active-img">
+															<img src="http://img.youtube.com/vi/{{med.image}}/0.jpg" alt="" class="img-responsive">
+														</a>
+													</div>
 												</div>
-											</div>
-										</li>
-									</flex-slider>
-								</div>
+											</li>
+										</flex-slider>
+									</div>
 
-								<!--
+									<!--
                                 <div class="col-xs-4">
                                     <div class="img-holder">
                                        <a href="#">
@@ -42,6 +43,7 @@
                                     </div>
                                 </div>
 -->
+								</div>
 							</div>
 						</div>
 						<div class="row">
