@@ -1,14 +1,14 @@
 <div class="products">
-    <div class="container">
-        <div class="row align">
-            <div class="col-md-11">
-                <div class="row prod">
-                    <div class="col-xs-3">
-                        <div class="product-list">
-                            <h2>product range</h2>
-                            <ul class="list" >
-                            <li ng-repeat="prol in productlist"><a title="{{prol.name}}" ng-click="getmultipleproducts(prol.id)" class="">{{prol.name}}</a></li>
-<!--
+	<div class="container">
+		<div class="row align">
+			<div class="col-md-11">
+				<div class="row prod">
+					<div class="col-xs-3">
+						<div class="product-list">
+							<h2>product range</h2>
+							<ul class="list">
+								<li ng-repeat="prol in productlist"><a title="{{prol.name}}" ng-click="getmultipleproducts(prol.id)" class="">{{prol.name}}</a></li>
+								<!--
                                 <li><a href="productinfo.html" title="Bread" class="active">Bread</a></li>
                                 <li><a href="#" title="Snacks - Vegetarian">Snacks - Vegetarian</a></li>
                                 <li><a href="#" title="Snacks - Non Vegetarian">Snacks - Non Vegetarian</a></li>
@@ -17,29 +17,28 @@
                                 <li><a href="#" title="Fish">Fish</a></li>
                                 <li><a href="#" title="Pastry">Pastry</a></li>
 -->
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xs-9">
-                        <div class="row prodarray">
-                            <div class="col-xs-4" ng-repeat="pro in product">
-                                <div class="product-info">
-                                    <div class="img-holder">
-                                        <span ng-click="getsingleproductdetail(pro.id)"><img ng-src="{{pro.image|serverimage}}" alt="paratha" /></span>
-                                    </div>
-                                    <div class="img-descp">
-                                        <a href="#/product-info">
-                                            <h3>{{pro.name}}</h3>
-                                            (<span>{{pro.pieces}}</span> pieces)
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-               
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-9">
+						<div class="row prodarray">
+							<div class="col-xs-4" ng-repeat="pro in product">
+								<div class="product-info">
+									<div class="img-holder">
+										<span ng-click="getsingleproductdetail(pro.id)"><img ng-src="{{pro.image|serverimage}}" alt="paratha" /></span>
+									</div>
+									<div class="img-descp">
+										<a href="#/product-info">
+											<h3>{{pro.name}}</h3> (
+											<span>{{pro.pieces}}</span> pieces)
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>

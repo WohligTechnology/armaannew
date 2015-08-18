@@ -71,6 +71,7 @@ body .overflowhiddendiv {
 .products .container .prod .prodarray {
   color: #FF6633;
   text-align: center;
+  overflow-y: scroll;
 }
 .products .container .prod .prodarray img {
   width: 100%;
@@ -132,6 +133,9 @@ body .overflowhiddendiv {
 .product-list ul li a:hover {
   font-weight: 600;
   text-decoration: none;
+}
+.product-list .prod-list {
+  overflow-y: scroll;
 }
 .active {
   font-weight: 600;
@@ -443,8 +447,28 @@ body .overflowhiddendiv {
   border: 2px solid #ff6633;
 }
 .available {
-  background: url('../img/aboutbg.jpg');
+  background: url('../img/feedback_backg.png');
   background-size: cover;
+}
+.available .img-avail {
+  position: relative;
+  margin: 5% 0 4%;
+}
+.available .img-avail p {
+  position: absolute;
+  left: 29%;
+  top: 15%;
+  color: #ff6633;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  word-spacing: 1px;
+}
+.available .flexslider:hover .flex-direction-nav .flex-prev {
+  left: -50px;
+}
+.available .flexslider:hover .flex-direction-nav .flex-next {
+  right: -50px;
 }
 .prd-info {
   border: 3px solid #E6E7E8;
