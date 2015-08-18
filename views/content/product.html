@@ -18,22 +18,24 @@
                                 <li><a href="#" title="Pastry">Pastry</a></li>
 -->
 
-<!--
+
 							</ul>
 						</div>
 					</div>
 					<div class="col-xs-9">
-						<div class="row prodarray">
-							<div class="col-xs-4" ng-repeat="pro in product">
-								<div class="product-info">
-									<div class="img-holder">
-										<span ng-click="getsingleproductdetail(pro.id)"><img ng-src="{{pro.image|serverimage}}" alt="paratha" /></span>
-									</div>
-									<div class="img-descp">
-										<a href="#/product-info">
-											<h3>{{pro.name}}</h3> (
-											<span>{{pro.pieces}}</span> pieces)
-										</a>
+						<div class="prod-scroll">
+							<div class="row prodarray">
+								<div class="col-xs-4" ng-repeat="pro in product">
+									<div class="product-info">
+										<div class="img-holder">
+											<span ng-click="getsingleproductdetail(pro.id)"><img ng-src="{{pro.image|serverimage}}" alt="paratha" /></span>
+										</div>
+										<div class="img-descp">
+											<a href="#/product-info">
+												<h3>{{pro.name}}</h3>
+												<span>{{pro.pieces}}</span>
+											</a>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -43,31 +45,4 @@
 			</div>
 		</div>
 	</div>
--->
-
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xs-9">
-                        <div class="row prodarray">
-                            <div class="col-xs-4" ng-repeat="pro in product">
-                                <div class="product-info">
-                                    <div class="img-holder">
-                                        <span ng-click="getsingleproductdetail(pro.id)"><img ng-src="{{pro.image|serverimage}}" alt="paratha" /></span>
-                                    </div>
-                                    <div class="img-descp">
-                                        <a href="#/product-info">
-                                            <h3>{{pro.name}}</h3>
-                                            <span>{{pro.pieces}}</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-               
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>

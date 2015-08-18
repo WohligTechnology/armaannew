@@ -68,31 +68,57 @@ body .overflowhiddendiv {
 .products {
   margin-left: 8%;
 }
-.products .container .prod .prodarray {
+.products .container .prod .prod-scroll {
+  height: 600px;
+}
+.products .container .prod .prod-scroll ::-webkit-scrollbar {
+  width: 4px;
+}
+.products .container .prod .prod-scroll ::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+.products .container .prod .prod-scroll ::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 10px;
+  -moz-background-clip: padding;
+  border-radius: 10px;
+  background-clip: padding-box;
+  background: grey;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+.products .container .prod .prod-scroll ::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255, 0, 0, 0.4);
+}
+.products .container .prod .prod-scroll .prodarray {
   color: #FF6633;
   text-align: center;
   overflow-y: scroll;
 }
-.products .container .prod .prodarray img {
+.products .container .prod .prod-scroll .prodarray img {
   width: 100%;
   border: 3px solid #E6E7E8;
 }
-.products .container .prod .prodarray a {
+.products .container .prod .prod-scroll .prodarray a {
   color: #ff6633;
   -webkit-transition: all 300ms ease;
   -moz-transition: all 300ms ease;
   -o-transition: all 300ms ease;
   transition: all 300ms ease;
 }
-.products .container .prod .prodarray a:hover {
+.products .container .prod .prod-scroll .prodarray a:hover {
   color: #000;
 }
-.products .container .prod .prodarray .img-descp {
+.products .container .prod .prod-scroll .prodarray .img-descp {
   margin-bottom: 14px;
   font-size: 14px;
   font-weight: 600;
 }
-.products .container .prod .prodarray .img-descp h3 {
+.products .container .prod .prod-scroll .prodarray .img-descp h3 {
   padding-top: 12px;
   border-top: 1px solid #D2D3D5;
   margin: 14px 0 0 0;
