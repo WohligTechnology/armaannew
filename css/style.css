@@ -68,9 +68,6 @@ body .overflowhiddendiv {
 .products {
   margin-left: 8%;
 }
-.products .container .prod .prod-scroll {
-  height: 600px;
-}
 .products .container .prod .prod-scroll ::-webkit-scrollbar {
   width: 4px;
 }
@@ -95,6 +92,7 @@ body .overflowhiddendiv {
   background: rgba(255, 0, 0, 0.4);
 }
 .products .container .prod .prod-scroll .prodarray {
+  height: 600px;
   color: #FF6633;
   text-align: center;
   overflow-y: scroll;
