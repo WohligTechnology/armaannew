@@ -30,28 +30,39 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 	$scope.navigation = NavigationService.getnav();
 })
 
-.controller('MediaCtrl', function ($scope, TemplateService, NavigationService) {
+.controller('MediaCtrl', function ($scope, TemplateService, NavigationService, ngDialog) {
 	$scope.template = TemplateService.changecontent("media");
 	$scope.menutitle = NavigationService.makeactive("Media");
 	TemplateService.title = $scope.menutitle;
 	$scope.navigation = NavigationService.getnav();
 	$scope.hidenav = 'hidenav';
 	$scope.slidesabout = [
-    'img/slider/slider1.jpg',
-    'img/slider/slider2.jpg',
-    'img/slider/slider3.jpg',
-    'img/slider/slider4.jpg',
-    'img/slider/slider5.jpg'
+    'img/slider/1.jpg',
+    'img/slider/2.jpg',
+    'img/slider/3.jpg',
+    'img/slider/4.jpg',
+    'img/slider/5.jpg',
+    'img/slider/6.jpg',
+		'img/slider/7.jpg',
+    'img/slider/8.jpg'
    ];
 
+	$scope.openModal = function (s) {
+		console.log(s);
+		$scope.dialogimage=s;
+		ngDialog.open({
+			template: 'views/content/imagepopup.html',
+			scope: $scope
+		});
+	}
 
 	$scope.toBigImage = function (med) {
-			$scope.bigmedia = med.image;
+			$scope.bigmedia = med.video;
 		}
 		//get images
 	var getmediasuccess = function (data, status) {
 		$scope.media = data;
-		$scope.bigmedia = data[0].image;
+		$scope.bigmedia = data[0].video;
 		console.log(data);
 	}
 	NavigationService.getmedia().success(getmediasuccess);
@@ -193,9 +204,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 .controller('headerctrl', function ($scope, TemplateService, $rootScope, $timeout) {
 	$scope.template = TemplateService;
-	$rootScope.$on('$stateChangeStart', function () {
-		$timeout(changeBodyZoom, 1000);
-	});
 })
 
 .controller('sliderctrl', function ($scope, TemplateService) {

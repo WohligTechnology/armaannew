@@ -105,7 +105,7 @@ firstapp.directive('youtube', function ($sce) {
 
 firstapp.filter('serverimage', function() {
     return function(image) {
-        return imgpath + image;
+        return imgpath + image+"&width=500";
     };
 });
 var formvalidation = function (allvalidation) {

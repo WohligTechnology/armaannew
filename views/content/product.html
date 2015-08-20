@@ -26,12 +26,11 @@
 						<div class="prod-scroll">
 							<div class="row prodarray">
 								<div class="col-xs-4" ng-repeat="pro in product">
-									<div class="product-info">
-										<div class="img-holder">
-											<span ng-click="getsingleproductdetail(pro.id)"><img ng-src="{{pro.image|serverimage}}" alt="paratha" /></span>
+									<div class="product-info" ng-click="getsingleproductdetail(pro.id)">
+											<span><img ng-src="{{pro.image|serverimage}}" alt="paratha" /></span>
 										</div>
 										<div class="img-descp">
-											<a href="#/product-info">
+											<a href="#/product-info/{{pro.id}}">
 												<h3>{{pro.name}}</h3>
 												<span>{{pro.pieces}}</span>
 											</a>

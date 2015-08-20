@@ -1,5 +1,6 @@
 {
     "jscodehints.detectedExclusions": [
-        "C:/xampp/htdocs/armaanui/bower_components/angular-ui/test/lib/tinymce/tiny_mce.js"
+        "C:/xampp/htdocs/armaanui/bower_components/angular-ui/test/lib/tinymce/tiny_mce.js",
+        "C:/xampp/htdocs/armaannew/js/controllers.js"
     ]
 }
