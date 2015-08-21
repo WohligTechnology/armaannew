@@ -567,7 +567,7 @@ body .overflowhiddendiv {
   line-height: 25px;
 }
 img {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;

@@ -61,7 +61,7 @@ firstapp.config(function($stateProvider, $urlRouterProvider, cfpLoadingBarProvid
 });
 
 
-firstapp.directive('img', function($compile, $parse) {
+firstapp.directive('img2', function($compile, $parse) {
     return {
         restrict: 'E',
         replace: false,
