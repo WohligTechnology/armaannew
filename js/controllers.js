@@ -213,12 +213,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 .controller('headerctrl', function ($scope, TemplateService, $rootScope, $timeout) {
 	$scope.template = TemplateService;
-<<<<<<< HEAD
-=======
-	$rootScope.$on('$stateChangeStart', function () {
 
-	});
->>>>>>> 9715e6d0b246bebdb705be9e474581328e94b3a4
 })
 
 .controller('sliderctrl', function ($scope, TemplateService) {
