@@ -194,7 +194,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 .controller('headerctrl', function ($scope, TemplateService, $rootScope, $timeout) {
 	$scope.template = TemplateService;
 	$rootScope.$on('$stateChangeStart', function () {
-		$timeout(changeBodyZoom, 1000);
+
 	});
 })
 

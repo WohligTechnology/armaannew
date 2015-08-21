@@ -1,6 +1,6 @@
 //var admin_url = "http://www.powerforone.org/admin/index.php/";
- var admin_url = "http://localhost/armaan/index.php/";
-var adminbase = "http://localhost/armaan/";
+ var admin_url = "http://www.armaanfrozenfoods.com/admin/index.php/";
+var adminbase = "http://www.armaanfrozenfoods.com/admin/";
 var imgpath = adminbase + "uploads/";
 var navigationservice = angular.module('navigationservice', [])
 
