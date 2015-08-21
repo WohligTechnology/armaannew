@@ -79,8 +79,6 @@ body .overflowhiddendiv {
   text-align: center;
 }
 .products .container .prod .prod-scroll .prodarray img {
-  width: auto;
-  height: 250px;
   border: 3px solid #E6E7E8;
   cursor: pointer;
   text-align: center;
@@ -106,6 +104,9 @@ body .overflowhiddendiv {
   margin: 14px 0 0 0;
   font-size: 14px;
   font-weight: 600;
+}
+.product-info.image-holder {
+  height: 250px;
 }
 .product-list {
   min-height: 540px;
@@ -145,8 +146,8 @@ body .overflowhiddendiv {
 .product-list .prod-list {
   overflow-y: scroll;
 }
-.active {
-  font-weight: 600;
+.product-list a.active {
+  font-weight: bold;
 }
 .aboutus {
   height: 572px;

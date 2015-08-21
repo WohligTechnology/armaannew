@@ -1,6 +1,8 @@
 {
     "jscodehints.detectedExclusions": [
         "C:/xampp/htdocs/armaanui/bower_components/angular-ui/test/lib/tinymce/tiny_mce.js",
-        "C:/xampp/htdocs/armaannew/js/controllers.js"
+        "C:/xampp/htdocs/armaannew/js/controllers.js",
+        "C:/xampp/htdocs/armaannew/admin/assets/js1/gritter.js",
+        "C:/xampp/htdocs/armaannew/admin/assets/js1/highcharts.js"
     ]
 }

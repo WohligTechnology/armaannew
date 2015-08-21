@@ -121,8 +121,6 @@ body {
 						text-align: center;
 					}
 					img {
-						width: auto;
-						height: 250px;
 						border: 3px solid #E6E7E8;
 						cursor: pointer;
 						text-align: center;
@@ -152,6 +150,10 @@ body {
 	}
 }
 
+.product-info.image-holder {
+	height: 250px;
+}
+
 .product-list {
 	min-height: 540px;
 	background-color: #D2AE6D;
@@ -171,6 +173,8 @@ body {
 			padding: 15px;
 			border-bottom: 1px solid #fff;
 			list-style-type: none;
+			
+			
 			a {
 				color: #000;
 				font-size: 14px;
@@ -186,11 +190,12 @@ body {
 	.prod-list {
 		overflow-y: scroll;
 	}
+	
+				a.active  {font-weight: bold;}
+					
 }
 
-.active {
-	font-weight: 600;
-}
+
 
 //About Us
 .aboutus {
@@ -306,9 +311,9 @@ body {
 	.contact {
 		padding-right: 0;
 		.logo-armaan {
-		margin-bottom: 5%;
+			margin-bottom: 5%;
 			img {
-			width: 75%;	
+				width: 75%;
 			}
 		}
 		address {

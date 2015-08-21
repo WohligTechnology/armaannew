@@ -120,3 +120,36 @@ var formvalidation = function (allvalidation) {
     }
     return isvalid2;
 };
+
+
+//image
+
+firstapp.directive('fixit', function ($window) {
+    return function (scope, element, attrs) {
+        var myelem = {};
+        var imagedim = {};
+        $element = $(element);
+        myelem.height = $element.height();
+        myelem.width = $element.width();
+        myelem.ratio = myelem.width / myelem.height;
+
+        $element.children("img.fix-img").load(function () {
+            imagedim.height = $(this).height();
+            imagedim.width = $(this).width();
+            imagedim.ratio = imagedim.width / imagedim.height;
+
+
+            if (myelem.ratio == imagedim.ratio) {
+                $(this).css("width", "auto");
+                $(this).css("height", myelem.height);
+            } else if (myelem.ratio > imagedim.ratio) {
+                $(this).css("width", "auto");
+                $(this).css("height", myelem.height);
+            } else {
+                $(this).css("width", "100%");
+                $(this).css("height", "auto");
+            }
+
+        });
+    };
+});

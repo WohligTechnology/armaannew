@@ -7,12 +7,12 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 	TemplateService.title = $scope.menutitle;
 	$scope.navigation = NavigationService.getnav();
 	$scope.slidesabout = [
-    'img/slider/slider1.jpg',
-    'img/slider/slider2.jpg',
-    'img/slider/slider3.jpg',
-    'img/slider/slider4.jpg',
-    'img/slider/slider5.jpg'
-   ];
+        'img/slider/slider1.jpg',
+        'img/slider/slider2.jpg',
+        'img/slider/slider3.jpg',
+        'img/slider/slider4.jpg',
+        'img/slider/slider5.jpg'
+    ];
 
 })
 
@@ -37,19 +37,19 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 	$scope.navigation = NavigationService.getnav();
 	$scope.hidenav = 'hidenav';
 	$scope.slidesabout = [
-    'img/slider/1.jpg',
-    'img/slider/2.jpg',
-    'img/slider/3.jpg',
-    'img/slider/4.jpg',
-    'img/slider/5.jpg',
-    'img/slider/6.jpg',
-		'img/slider/7.jpg',
-    'img/slider/8.jpg'
-   ];
+        'img/slider/1.jpg',
+        'img/slider/2.jpg',
+        'img/slider/3.jpg',
+        'img/slider/4.jpg',
+        'img/slider/5.jpg',
+        'img/slider/6.jpg',
+        'img/slider/7.jpg',
+        'img/slider/8.jpg'
+    ];
 
 	$scope.openModal = function (s) {
 		console.log(s);
-		$scope.dialogimage=s;
+		$scope.dialogimage = s;
 		ngDialog.open({
 			template: 'views/content/imagepopup.html',
 			scope: $scope
@@ -86,21 +86,32 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 		$scope.navigation = NavigationService.getnav();
 
 		$scope.hidenav = 'hidenav';
-		productid = $stateParams.id;
+		var productid = $stateParams.id;
 		console.log(productid);
 
-		if (productid != 1) {
-			$scope.getmultipleproducts = function (id) {
-				console.log("in if");
-				NavigationService.viewprojectbyprojecttype(productid, viewprojectbyprojecttypesuccess);
-
-			}
-		} else {
-			console.log("in else");
-			$scope.getmultipleproducts = function (id) {
-				NavigationService.viewprojectbyprojecttype(id, viewprojectbyprojecttypesuccess);
-			}
+		var viewprojectbyprojecttypesuccess = function (data, status) {
+			$scope.product = data.queryresult;
+			console.log($scope.product);
 		}
+
+		$scope.getmultipleproducts = function (id) {
+			NavigationService.viewprojectbyprojecttype(id, viewprojectbyprojecttypesuccess);
+			$scope.currentactive = id;
+		}
+		if ($stateParams.id) {
+			$scope.getmultipleproducts($stateParams.id);
+		}
+		//		if (productid != 1) {
+		//			$scope.getmultipleproducts = function (id) {
+		//				console.log("in if");
+		//				NavigationService.viewprojectbyprojecttype(productid, viewprojectbyprojecttypesuccess);
+		//			}
+		//		} else {
+		//			console.log("in else");
+		//			$scope.getmultipleproducts = function (id) {
+		//				NavigationService.viewprojectbyprojecttype(id, viewprojectbyprojecttypesuccess);
+		//			}
+		//		}
 
 		// GET PRODUCTS SIDE MENU
 		$scope.productlist = {};
@@ -114,10 +125,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 
 		// GET MULTIPLE PRODUCTS
-		var viewprojectbyprojecttypesuccess = function (data, status) {
-			$scope.product = data.queryresult;
-			console.log($scope.product);
-		}
+
 
 		$scope.getsingleproductdetail = function (id) {
 			$location.url("/product-info/" + id);
@@ -172,13 +180,13 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 			$scope.allvalidation = [{
 				field: $scope.feedback.name,
 				validation: ""
-        }, {
+            }, {
 				field: $scope.feedback.email,
 				validation: ""
-        }, {
+            }, {
 				field: $scope.feedback.feedback,
 				validation: ""
-   }];
+            }];
 			var check = formvalidation($scope.allvalidation);
 			//        if (navigator.network.connection.type == Connection.none) {
 			//            var myPopup = $ionicPopup.show({
@@ -210,13 +218,13 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 	$scope.template = TemplateService;
 
 	$scope.slides = [
-    'img/slider/1.jpg',
-    'img/slider/2.jpg',
-    'img/slider/3.jpg',
-    'img/slider/4.jpg',
-    'img/slider/5.jpg',
-    'img/slider/6.jpg',
-    'img/slider/7.jpg',
-    'img/slider/8.jpg'
-   ];
+        'img/slider/1.jpg',
+        'img/slider/2.jpg',
+        'img/slider/3.jpg',
+        'img/slider/4.jpg',
+        'img/slider/5.jpg',
+        'img/slider/6.jpg',
+        'img/slider/7.jpg',
+        'img/slider/8.jpg'
+    ];
 });

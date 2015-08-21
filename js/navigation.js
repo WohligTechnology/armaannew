@@ -1,9 +1,9 @@
 //var admin_url = "http://www.powerforone.org/admin/index.php/";
- var admin_url = "http://localhost/armaannew/admin/index.php/";
-var adminbase = "http://localhost/armaannew/admin/"; 
+// var admin_url = "http://localhost/armaannew/admin/index.php/";
+//var adminbase = "http://localhost/armaannew/admin/"; 
 
-//var admin_url = "http://wohlig.co.in/armaannew/admin/index.php/";
-//var adminbase = "http://wohlig.co.in/armaannew/admin/";
+var admin_url = "http://wohlig.co.in/armaannew/admin/index.php/";
+var adminbase = "http://wohlig.co.in/armaannew/admin/";
 var imgpath = adminbase + "index.php/image/index/?name=";
 var navigationservice = angular.module('navigationservice', [])
 
