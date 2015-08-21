@@ -106,6 +106,12 @@ firstapp.filter('serverimage', function() {
         return imgpath + image+"&width=500";
     };
 });
+
+firstapp.filter('serverimagesmall', function() {
+    return function(image) {
+        return imgpath + image+"&width=250";
+    };
+});
 var formvalidation = function (allvalidation) {
     var isvalid2 = true;
     for (var i = 0; i < allvalidation.length; i++) {
