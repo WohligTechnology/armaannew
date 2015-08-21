@@ -25,7 +25,8 @@
                                 <div class="col-md-7">
                                     <div class="product-info">
                                         <div class="img-holder">
-                                            <img ng-src="{{singleproductdetail.image|serverimage}}" alt="paratha" class="img-responsive prd-info" />
+                                          
+                                            <img  ng-if="singleproductdetail" ng-src="{{singleproductdetail.image|serverimage}}" alt="paratha" class="img-responsive prd-info" />
                                         </div>
                                         <div class="img-descp">
                                             <h3>{{singleproductdetail.name}}</h3>
