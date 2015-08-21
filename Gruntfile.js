@@ -12,7 +12,7 @@ module.exports = function(grunt) {
                     compress: false,
                 },
                 files: {
-                    './w/w.css': './less/other.less'
+                    './w/w.css': './less/style.less'
                 }
             },
             production: {
@@ -21,7 +21,7 @@ module.exports = function(grunt) {
                     compress: true
                 },
                 files: {
-                    './w/w.css': './less/other.less'
+                    './w/w.css': './less/style.less'
                 }
             }
         },

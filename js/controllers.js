@@ -1,6 +1,6 @@
 angular.module('phonecatControllers', ['templateservicemod', 'navigationservice','ngDialog','ngSanitize','angular-flexslider'])
 
-.controller('AboutusCtrl', function ($scope, TemplateService, NavigationService, cfpLoadingBar, $timeout) {
+.controller('AboutusCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
 	//Used to name the .html file
 	$scope.template = TemplateService.changecontent("aboutus");
 	$scope.menutitle = NavigationService.makeactive("About Us");

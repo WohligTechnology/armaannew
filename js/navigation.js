@@ -1,6 +1,6 @@
 var admin_url = "http://www.armaanfrozenfoods.com/admin/index.php/";
 var adminbase = "http://www.armaanfrozenfoods.com/admin/";
-var imgpath = adminbase + "uploads/";
+var imgpath = admin_url + "image?";
 var navigationservice = angular.module('navigationservice', [])
 
 .factory('NavigationService', function ($http) {

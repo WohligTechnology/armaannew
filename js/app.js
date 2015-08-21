@@ -6,6 +6,7 @@ var firstapp = angular.module('firstapp', [
     'navigationservice'
 ]);
 
+
 firstapp.config(function($stateProvider, $urlRouterProvider,$httpProvider) {
     
     // for http request with session
