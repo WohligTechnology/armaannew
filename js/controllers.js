@@ -50,8 +50,9 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 		}
 		//get images
 	var getmediasuccess = function (data, status) {
+        console.log(data);
 		$scope.media = data;
-		$scope.bigmedia = data[0].image;
+		$scope.bigmedia = data[0].video;
 		console.log(data);
 	}
 	NavigationService.getmedia().success(getmediasuccess);
