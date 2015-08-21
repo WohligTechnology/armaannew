@@ -1,10 +1,16 @@
 //var admin_url = "http://www.powerforone.org/admin/index.php/";
+<<<<<<< HEAD
 // var admin_url = "http://localhost/armaannew/admin/index.php/";
 //var adminbase = "http://localhost/armaannew/admin/"; 
 
 var admin_url = "http://wohlig.co.in/armaannew/admin/index.php/";
 var adminbase = "http://wohlig.co.in/armaannew/admin/";
 var imgpath = adminbase + "index.php/image/index/?name=";
+=======
+ var admin_url = "http://www.armaanfrozenfoods.com/admin/index.php/";
+var adminbase = "http://www.armaanfrozenfoods.com/admin/";
+var imgpath = adminbase + "uploads/";
+>>>>>>> 9715e6d0b246bebdb705be9e474581328e94b3a4
 var navigationservice = angular.module('navigationservice', [])
 
 .factory('NavigationService', function ($http) {

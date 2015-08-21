@@ -254,6 +254,10 @@ body .overflowhiddendiv {
   left: 49%;
   color: #ff6633;
   font-size: 14px;
+  -webkit-transform: translate(-50%, -10%);
+  -moz-transform: translate(-50%, -10%);
+  -o-transform: translate(-50%, -10%);
+  -ms-transform: translate(-50%, -10%);
   transform: translate(-50%, -10%);
   font-weight: 700;
 }
@@ -328,6 +332,10 @@ body .overflowhiddendiv {
   color: #ff6633;
   font-size: 14px;
   font-weight: 700;
+  -webkit-transform: translate(-50%, -10%);
+  -moz-transform: translate(-50%, -10%);
+  -o-transform: translate(-50%, -10%);
+  -ms-transform: translate(-50%, -10%);
   transform: translate(-50%, -10%);
   word-spacing: 3px;
   text-transform: uppercase;
