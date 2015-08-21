@@ -6,13 +6,10 @@ var firstapp = angular.module('firstapp', [
     'navigationservice'
 ]);
 
-firstapp.config(function($stateProvider, $urlRouterProvider, cfpLoadingBarProvider,$httpProvider) {
+firstapp.config(function($stateProvider, $urlRouterProvider,$httpProvider) {
     
     // for http request with session
     $httpProvider.defaults.withCredentials = true;
-    
-    //Turn the spinner on or off
-    cfpLoadingBarProvider.includeSpinner = false;
 
     $stateProvider
 

@@ -1,4 +1,4 @@
-angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'ui.bootstrap', 'cfp.loadingBar', 'infinite-scroll', 'toaster', 'ngAnimate', 'ngAutocomplete', 'ngTagsInput', 'ngDialog', 'ngSocial', 'valdr', 'ngSanitize', 'ui.select', 'angular-flexslider', 'vcRecaptcha'])
+angular.module('phonecatControllers', ['templateservicemod', 'navigationservice','ngDialog','ngSanitize','angular-flexslider'])
 
 .controller('AboutusCtrl', function ($scope, TemplateService, NavigationService, cfpLoadingBar, $timeout) {
 	//Used to name the .html file
@@ -157,7 +157,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 		}
 		NavigationService.getproducttype().success(getproducttypesuccess);
 	})
-	.controller('FeedbackCtrl', function ($scope, TemplateService, NavigationService, vcRecaptchaService, ngDialog) {
+	.controller('FeedbackCtrl', function ($scope, TemplateService, NavigationService, ngDialog) {
 		$scope.template = TemplateService.changecontent("feedback");
 		$scope.menutitle = NavigationService.makeactive("Feedback");
 		TemplateService.title = $scope.menutitle;
