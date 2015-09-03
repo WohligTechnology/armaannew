@@ -214,7 +214,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
                 console.log("Invalid");
             }
         }
-    })
+    }) 
 
 
 .controller('headerctrl', function ($scope, TemplateService, $rootScope, $timeout) {
